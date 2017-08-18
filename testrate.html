@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rate USD</title>
+    <script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+</head>
+<body>
+
+<script>
+    setTimeout(F1, 1000);
+
+function F1(){
+    $.get('test1.php', function(data){
+        $('#rate').html(data);
+    });
+    setTimeout(F1, 10000);
+}
+</script>
+
+<div id="rate">
+
+</div>
+</body>
+</html>
